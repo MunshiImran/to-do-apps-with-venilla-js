@@ -1,6 +1,6 @@
 
 /*
- * Title: To Do List CSS file
+ * Title: To Do List jS file
  * Description: This file has all the script associated with the To Do App project
  * Author: MD. Imran Hossen
  * Date: 11-8-2021
