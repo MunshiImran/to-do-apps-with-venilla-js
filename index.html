@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do app with vanilla js</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo140.png">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <!-- logo part start -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo text-center mx-auto mt-5">
+                        <img src="images/logo140.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- logo part end -->
+            <!-- header text part start -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header text-center">
+                        <h1 class="my-5">TO-DO APP</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- header text part end -->
+            <!-- form part start -->
+            <form class="row g-3 insert">
+                <div class="col-lg-4">
+                    <p class="p-text text-end mt-1">Add New Task</p>
+                </div>
+                <div class="col-lg-4">
+                    <label  for="new-task" class="visually-hidden"></label>
+                    <input type="text" class="form-control" id="new-task">
+                </div>
+                <div class="col-lg-4">
+                    <button type="submit" id="submit" class="btn btn-primary mb-3">Add Task</button>
+                </div>
+            </form>
+            <!-- form part end -->
+            <div class="row">
+                <!-- Incomplete Tasks part start -->
+                <div class="col-lg-6">
+                    <div class="todo-list box text-center py-5 mt-5 mx-5">
+                        <h5 class="mb-4">Incomplete Tasks</h5>
+                        <ul id="items">
+                            <li class="item my-2">
+                                <input type="checkbox" id="new" /><label for="new">Task Name</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Incomplete Tasks part end -->
+                <!-- Completed Tasks part start -->
+                <div class="col-lg-6">
+                    <div class="complete-list box text-center py-5 mt-5 mb-3 mx-5">
+                        <h5>Completed Tasks</h5>
+                        <ul>
+                          <li class="item my-2"> Task Name <button class="delete">Delete</button></li>
+                        </ul>
+                      </div>
+                </div>
+                <!-- Completed Tasks part end -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
